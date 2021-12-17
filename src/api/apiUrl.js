@@ -1,3 +1,3 @@
-export default {
-    userList: "user/",
-  };
+const UserList = "search/users?q=";
+
+export {UserList}
