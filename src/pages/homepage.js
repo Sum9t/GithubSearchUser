@@ -1,10 +1,13 @@
 import React from "react";
 
-import { SearchUserConatiner } from "../containers/index";
+import { SearchUserConatiner } from "../containers";
 import "./style.css";
 
 export const HomePage = () => {
-  return (
-      <SearchUserConatiner className={"inputbox"} />
-  );
+	return (
+		<>
+			<h1 className='title'>Search Github User</h1>
+			<SearchUserConatiner className={"inputbox"} />
+		</>
+	);
 };

@@ -1,4 +1,5 @@
 import { CONFIG } from "../config/config";
+
 export default function fireAjax({ method, URL, data, header }) {
   URL = CONFIG.BASEURL + URL;
   if (method === "GET") {
@@ -9,9 +10,8 @@ export default function fireAjax({ method, URL, data, header }) {
       },
     };
     return fetch(URL, headers).then(
-      async (res) => {
-        const people = await res.json();
-        return people;
+      (res) => {
+        return res.json();
       },
       (error) => {
         return error;
