@@ -1,0 +1,51 @@
+.imgdiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.list {
+	align-items: center;
+}
+.maincontainer:hover {
+	background-color: rgb(28, 40, 66);
+}
+.separator {
+	height: 1px;
+	width: 100%;
+	background-color: #7e7e7e30;
+}
+.suggestions {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	margin-top: -17px;
+	z-index: 99;
+	background-color: #161b22;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.list a {
+	text-decoration: none;
+}
+
+.maincontainer {
+	padding: 0px 12px;
+	display: flex;
+}
+
+.pic {
+	width: 35px;
+	height: 35px;
+	border-radius: 1rem;
+}
+.gitname {
+	align-items: center;
+	display: flex;
+}
+.gitname p {
+	color: white;
+	font-size: 18px;
+	margin-left: 1rem;
+}
